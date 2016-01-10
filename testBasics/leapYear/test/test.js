@@ -4,7 +4,11 @@ var expect = require('chai').expect;
 
 describe("Leap Year", function(){
 	it("should say 'This is a leap year' when ran", function(){
-		expect(code.leapYear()).to.equal("This is a leap year!");
+		expect(code.leapYear(2016)).to.equal("This is a leap year");
+	});
+
+	it("should say 'This is not a leap year' when ran", function(){
+		expect(code.leapYear(1999)).to.equal("This is not a leap year");
 	});
 });
 
